@@ -59,6 +59,12 @@
        });
     });
 
+    app.get('/project',(req,res)=>{
+    res.render('project.hbs',{
+        pageTitle:'projects',
+    });
+    });
+
     app.get('/bad',(req,res)=>{
         res.send({
             errorMessage:'unable to handle request'
